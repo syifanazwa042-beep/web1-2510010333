@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Formulir pemesanan kain, pakaian, dan aksesoris Sasirangan Banua melalui WhatsApp.">
+    <title>Pesan Produk &mdash; Sasirangan Banua</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/form.js" defer></script>
+</head>
+<body>
+
+    <header class="header-situs">
+        <div class="navbar">
+            <p class="logo"><a href="index.html">Sasirangan Banua</a></p>
+            <nav aria-label="Navigasi utama">
+                <a href="index.html">Beranda</a>
+                <a href="index.html#produk">Produk</a>
+                <a href="index.html#tentang">Tentang</a>
+                <a href="kontak.html" aria-current="page">Pesan</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="bagian" id="pesan">
+            <div class="section-heading">
+                <h1>Formulir Pemesanan</h1>
+                <p>Isi formulir berikut untuk memesan produk Sasirangan Banua. Kolom bertanda <strong>*</strong> wajib diisi.</p>
+            </div>
+
+            <form id="form-pesan" class="form-pesan" action="#" method="get" novalidate>
+                <div class="kolom">
+                    <label for="nama">Nama lengkap *</label>
+                    <input type="text" id="nama" name="nama" required minlength="3" autocomplete="name" aria-describedby="galat-nama">
+                    <p id="galat-nama" class="pesan-galat" role="alert"></p>
+                </div>
+
+                <div class="kolom">
+                    <label for="wa">Nomor WhatsApp *</label>
+                    <input type="tel" id="wa" name="wa" required pattern="08[0-9]{8,11}" placeholder="Contoh: 081234567890" autocomplete="tel" aria-describedby="galat-wa">
+                    <p id="galat-wa" class="pesan-galat" role="alert"></p>
+                </div>
+
+                <div class="kolom">
+                    <label for="email">Surel</label>
+                    <input type="email" id="email" name="email" placeholder="nama@email.com" autocomplete="email" aria-describedby="galat-email">
+                    <p id="galat-email" class="pesan-galat" role="alert"></p>
+                </div>
+
+                <div class="kolom">
+                    <label for="produk">Produk yang dipesan *</label>
+                    <select id="produk" name="produk" required aria-describedby="galat-produk">
+                        <option value="">-- Pilih produk --</option>
+                        <option value="Kain Motif Gigi Haruan">Kain Motif Gigi Haruan</option>
+                        <option value="Kain Motif Kambang Kacang">Kain Motif Kambang Kacang</option>
+                        <option value="Selendang Iris Pudak">Selendang Iris Pudak</option>
+                        <option value="Kain Motif Naga Balimbur">Kain Motif Naga Balimbur</option>
+                        <option value="Gamis Ombak Sinapur Karang">Gamis Ombak Sinapur Karang</option>
+                        <option value="Kemeja Bayam Raja">Kemeja Bayam Raja</option>
+                        <option value="Tas Tote Kulit Kayu Sasirangan">Tas Tote Kulit Kayu Sasirangan</option>
+                        <option value="Kain Motif Bintang Bahambur">Kain Motif Bintang Bahambur</option>
+                    </select>
+                    <p id="galat-produk" class="pesan-galat" role="alert"></p>
+                </div>
+
+                <div class="kolom">
+                    <label for="jumlah">Jumlah *</label>
+                    <input type="number" id="jumlah" name="jumlah" min="1" max="50" value="1" required aria-describedby="galat-jumlah">
+                    <p id="galat-jumlah" class="pesan-galat" role="alert"></p>
+                </div>
+
+                <fieldset>
+                    <legend>Metode pengambilan *</legend>
+                    <label><input type="radio" name="pengambilan" value="Ambil di galeri" checked> Ambil di galeri</label>
+                    <label><input type="radio" name="pengambilan" value="Dikirim ke alamat"> Dikirim ke alamat</label>
+                </fieldset>
+
+                <div class="kolom">
+                    <label for="catatan">Catatan tambahan</label>
+                    <textarea id="catatan" name="catatan" rows="4" maxlength="300" placeholder="Contoh: ukuran L, warna dominan merah"></textarea>
+                </div>
+
+                <div class="kolom">
+                    <label class="cek">
+                        <input type="checkbox" id="setuju" name="setuju" required aria-describedby="galat-setuju">
+                        Saya setuju data ini hanya dipakai untuk memproses pesanan. *
+                    </label>
+                    <p id="galat-setuju" class="pesan-galat" role="alert"></p>
+                </div>
+
+                <button type="submit" class="tombol">Kirim Pesanan via WhatsApp</button>
+            </form>
+
+            <div id="hasil-pesan" class="hasil-pesan" hidden></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Sasirangan Banua &middot; Banjarmasin, Kalimantan Selatan</p>
+       <p>Dibuat oleh Nazwa Syifa Az-Zahra (2510010333) &middot; Praktikum Pemrograman Web 1 UNISKA MAB</p>
+    </footer>
+
+</body>
+</html>

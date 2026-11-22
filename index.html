@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Katalog kain, pakaian, dan aksesoris Sasirangan khas Banjarmasin karya pengrajin lokal.">
+    <title>Sasirangan Banua &mdash; Kain Khas Banjar</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/katalog.js" defer></script>
+</head>
+<body>
+    <header class="header-situs">
+        <div class="navbar">
+            <p class="logo"><a href="index.html">Sasirangan Banua</a></p>
+            <nav aria-label="Navigasi utama">
+                <a href="index.html" aria-current="page">Beranda</a>
+                <a href="#produk">Produk</a>
+                <a href="#tentang">Tentang</a>
+                <a href="kontak.html">Pesan</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" id="beranda">
+            <h1>Kain Sasirangan Asli Banjarmasin</h1>
+            <p>Mengenal keindahan kain tradisional Kalimantan Selatan karya pengrajin lokal.</p>
+        </section>
+        <section id="produk">
+            <div class="section-heading">
+                <h2>Katalog Produk Sasirangan</h2>
+                <p>Temukan berbagai motif khas Sasirangan Banua.</p>
+            </div>
+
+            <div class="kontrol-katalog">
+                <div class="kolom">
+                    <label for="cari">Cari produk</label>
+                    <input type="search" id="cari" placeholder="Cari motif sasirangan...">
+                </div>
+
+                <div class="filter" role="group" aria-label="Filter kategori">
+                    <button type="button" class="tombol-filter aktif" data-kategori="semua" aria-pressed="true">Semua</button>
+                    <button type="button" class="tombol-filter" data-kategori="kain" aria-pressed="false">Kain</button>
+                    <button type="button" class="tombol-filter" data-kategori="pakaian" aria-pressed="false">Pakaian</button>
+                    <button type="button" class="tombol-filter" data-kategori="aksesoris" aria-pressed="false">Aksesoris</button>
+                </div>
+            </div>
+
+            <p id="info-jumlah" class="info-jumlah" aria-live="polite"></p>
+
+            <div id="daftar-katalog" class="products"></div>
+            <noscript><p>Aktifkan JavaScript untuk melihat katalog produk.</p></noscript>
+        </section>
+
+
+        <section class="about" id="tentang">
+            <h2>Tentang Sasirangan Banua</h2>
+            <p>
+                <strong>Sasirangan Banua</strong> merupakan website katalog yang memperkenalkan keindahan kain tradisional Sasirangan dari Kalimantan Selatan dengan teknik jahit-ikat-celup warisan Urang Banjar.
+            </p>
+
+            <h3>Keunggulan Produk</h3>
+            <ul>
+                <li>Dikerjakan tangan oleh pengrajin lokal Banjarmasin</li>
+                <li>Motif asli warisan budaya Banjar</li>
+                <li>Bahan katun, satin, dan sutra pilihan</li>
+            </ul>
+
+            <h3>Jam Buka Galeri</h3>
+            <table>
+                <caption>Jadwal buka galeri Sasirangan Banua (WITA)</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Hari</th>
+                        <th scope="col">Jam Buka</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Senin - Kamis</td>
+                        <td>08.00 - 17.00</td>
+                    </tr>
+                    <tr>
+                        <td>Jumat</td>
+                        <td>08.00 - 11.00 dan 14.00 - 17.00</td>
+                    </tr>
+                    <tr>
+                        <td>Sabtu - Ahad</td>
+                        <td>09.00 - 16.00</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 Sasirangan Banua &middot; Banjarmasin, Kalimantan Selatan</p>
+        <p>Dibuat oleh Nazwa Syifa Az-Zahra (2510010333) &middot; Praktikum Pemrograman Web 1 UNISKA MAB</p>
+    </footer>
+
+</body>
+</html>
