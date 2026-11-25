@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Katalog kain, pakaian, dan aksesoris Sasirangan khas Banjarmasin karya pengrajin lokal.">
     <title>Sasirangan Banua &mdash; Kain Khas Banjar</title>
+    <link rel="icon" href="img/favicon.ico">
     <link rel="stylesheet" href="css/style.css">
     <script src="js/katalog.js" defer></script>
+    <script src="js/jadwal-salat.js" defer></script>
 </head>
 <body>
     <header class="header-situs">
@@ -26,6 +28,7 @@
             <h1>Kain Sasirangan Asli Banjarmasin</h1>
             <p>Mengenal keindahan kain tradisional Kalimantan Selatan karya pengrajin lokal.</p>
         </section>
+
         <section id="produk">
             <div class="section-heading">
                 <h2>Katalog Produk Sasirangan</h2>
@@ -51,7 +54,6 @@
             <div id="daftar-katalog" class="products"></div>
             <noscript><p>Aktifkan JavaScript untuk melihat katalog produk.</p></noscript>
         </section>
-
 
         <section class="about" id="tentang">
             <h2>Tentang Sasirangan Banua</h2>
@@ -91,11 +93,22 @@
                 </tbody>
             </table>
         </section>
+
+        <section class="jadwal-salat" aria-labelledby="judul-salat">
+            <div class="section-heading">
+                <h2 id="judul-salat">Jadwal Salat Hari Ini &mdash; Kota Banjarmasin</h2>
+                <p id="tanggal-salat" class="tanggal-salat"></p>
+            </div>
+            <div id="daftar-salat" class="grid-salat" aria-live="polite">
+                <p class="pesan-salat">Memuat jadwal salat...</p>
+            </div>
+            <p class="sumber-data">Sumber: Kementerian Agama RI melalui API MyQuran</p>
+        </section>
     </main>
+
     <footer>
         <p>&copy; 2026 Sasirangan Banua &middot; Banjarmasin, Kalimantan Selatan</p>
         <p>Dibuat oleh Nazwa Syifa Az-Zahra (2510010333) &middot; Praktikum Pemrograman Web 1 UNISKA MAB</p>
     </footer>
-
 </body>
 </html>
