@@ -1,5 +1,3 @@
-# web1-2510010201
-Proyek Praktikum Pemrograman Web 1 UNISKA
 # Sasirangan Banua — Katalog Kain & Produk Sasirangan
 
 Proyek praktikum Pemrograman Web 1 (Modul 1–4) Program Studi Teknik Informatika, Fakultas Teknologi Informasi, Universitas Islam Kalimantan (UNISKA) Muhammad Arsyad Al Banjari Banjarmasin.
